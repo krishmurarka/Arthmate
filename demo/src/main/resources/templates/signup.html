@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="https://www.thymeleaf.org" >
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>User Submission</title>
+</head>
+<body>
+<h3>Signup</h3>
+<form action="#" method="post" th:action="@{user/save}" th:object="${user}">
+    <p>name:</p>
+    <input type="text"  name="name" field="*{name}"><br><br>
+    <p>password:</p>
+    <input type="password" name="password" field="*{password}"><br><br>
+    <input type="submit" value="Submit">
+</form>
+</body>
+</html>
